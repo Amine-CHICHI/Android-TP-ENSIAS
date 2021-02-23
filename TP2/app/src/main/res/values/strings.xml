@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TP2</string>
+    <string name="welcome_message">Bonjour tout le monde</string>
+    <string name="login">Login</string>
+    <string name="login_placeHolder">Enter your username</string>
+    <string name="password">Mot de passe</string>
+    <string name="password_placeHolder">Enter your password</string>
+    <string name="connect">CONNECTER</string>
+    <string name="new_account">Nouveau Compte</string>
 </resources>
