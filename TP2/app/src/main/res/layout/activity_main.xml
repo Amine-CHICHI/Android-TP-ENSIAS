@@ -57,14 +57,13 @@
         android:id="@+id/textView_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
         android:text="@string/login"
         android:textColor="#FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText_login"
-        app:layout_constraintEnd_toStartOf="@+id/editText_login"
+        app:layout_constraintEnd_toEndOf="@id/textView_password"
         app:layout_constraintHorizontal_bias="0.32"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintRight_toRightOf="@id/textView_password" />
+    />
 
     <TextView
         android:id="@+id/textView_password"
@@ -75,42 +74,37 @@
         android:text="@string/password"
         android:textColor="#FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText_password"
-        app:layout_constraintEnd_toEndOf="@+id/textView_login"
         app:layout_constraintEnd_toStartOf="@+id/editText_password"
         app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintRight_toRightOf="@id/textView_login"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_Connect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:paddingLeft="25dp"
         android:paddingTop="10dp"
         android:paddingRight="25dp"
         android:paddingBottom="10dp"
         android:text="@string/connect"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.607"
-        app:layout_constraintLeft_toLeftOf="@id/editText_password"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editText_password"
         app:layout_constraintTop_toBottomOf="@+id/editText_password" />
 
     <TextView
         android:id="@+id/textView_newAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
+
         android:layout_marginTop="16dp"
         android:clickable="true"
         android:selectAllOnFocus="true"
         android:text="@string/new_account"
         android:textColor="@color/couleurs"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.628"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/button_Connect"
         app:layout_constraintTop_toBottomOf="@+id/button_Connect" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
