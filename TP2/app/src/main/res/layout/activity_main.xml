@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/space_background"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_marginTop="88dp"
         android:layout_marginRight="50dp"
         android:text="@string/welcome_message"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,6 +31,8 @@
         android:ems="10"
         android:hint="@string/login_placeHolder"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_welcomeMSG" />
@@ -43,6 +47,8 @@
         android:ems="10"
         android:hint="@string/password_placeHolder"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_login" />
@@ -54,6 +60,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
         android:text="@string/login"
+        android:textColor="#FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText_login"
         app:layout_constraintEnd_toStartOf="@+id/editText_login"
         app:layout_constraintHorizontal_bias="0.32"
@@ -66,7 +73,9 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:text="@string/password"
+        android:textColor="#FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText_password"
+        app:layout_constraintEnd_toEndOf="@+id/textView_login"
         app:layout_constraintEnd_toStartOf="@+id/editText_password"
         app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent" />
@@ -94,8 +103,10 @@
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:selectAllOnFocus="true"
         android:text="@string/new_account"
-        android:textColor="#93299E"
+        android:textColor="@color/couleurs"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.628"
