@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -55,7 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 Popup("Ok You want to create new account");
                 break;
             case R.id.button_Connect:
-                Popup("Ok You want to Connect");
+                Intent intent = new Intent(this, Mylist.class);
+                String message = "Mylist choosed";
+                intent.putExtra("msg", message);
+                startActivity(intent);
                 break;
         }
     }

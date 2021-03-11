@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -27,6 +28,8 @@ public class Mylist extends AppCompatActivity {
         setContentView(R.layout.activity_mylist);
         Log.d(TAG, "Mylist onCreate: called");
         initRecylerView();
+        Intent intent = getIntent();
+        Toast.makeText(this, intent.getStringExtra("msg"), Toast.LENGTH_LONG).show();
     }
 
     @Override

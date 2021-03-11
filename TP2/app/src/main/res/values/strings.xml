@@ -10,4 +10,5 @@
     <string name="about">à propos</string>
     <string name="add_etab">Ajouter un établissement</string>
     <string name="del_etab">Supprimer un établissement</string>
+    <string name="menu_a_choix">Menu a choix</string>
 </resources>

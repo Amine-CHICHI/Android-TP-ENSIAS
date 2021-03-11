@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,9 +17,9 @@
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintLeft_toRightOf="@id/img"
-        app:layout_constraintTop_toTopOf="@id/img"
+        android:text="TextViews"
+        android:layout_toRightOf="@+id/img"
+        android:layout_alignTop="@+id/img"
         android:layout_marginLeft="25sp"
         android:textSize="25sp"/>
 
@@ -27,10 +27,11 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintLeft_toLeftOf="@id/label"
+        android:text="Ecole Nationale Supérieure d'Informatique et d'Analyse des Systémes"
+        android:layout_alignLeft="@+id/label"
         app:layout_constraintTop_toBottomOf="@id/label"
+        android:layout_below="@+id/label"
         android:layout_marginTop="10sp"
         android:textSize="15sp"
-        android:scrollHorizontally="false"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+</RelativeLayout>
